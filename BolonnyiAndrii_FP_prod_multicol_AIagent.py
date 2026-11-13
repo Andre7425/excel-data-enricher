@@ -225,7 +225,7 @@ async def fetch_serper_batches(
     if not missing_queries:
         return results
 
-    url = "[https://google.serper.dev/search](https://google.serper.dev/search)"
+    url = "https://google.serper.dev/search"
     headers = {"X-API-KEY": SERPER_API_KEY, "Content-Type": "application/json"}
 
     for i in range(0, len(missing_queries), SERPER_BATCH_SIZE):
@@ -457,7 +457,7 @@ async def process_excel_async(file_path: str, task_description: str, resume_chec
     # Використовуємо наш захищений IPv4 HTTP-клієнт як для OpenRouter, так і для Serper
     async with create_resilient_http_client() as custom_http_client:
         async with AsyncOpenAI(
-            base_url="[https://openrouter.ai/api/v1](https://openrouter.ai/api/v1)",
+            base_url="https://openrouter.ai/api/v1",
             api_key=OPENROUTER_API_KEY,
             http_client=custom_http_client,
             max_retries=3
