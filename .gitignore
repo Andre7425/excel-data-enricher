@@ -16,8 +16,8 @@ ENV/
 *.sqlite3
 
 # Excel output files generated during tests
-*_enriched.xlsx
-*.xlsx
+# *_enriched.xlsx
+# *.xlsx
 
 # OS generated files
 .DS_Store

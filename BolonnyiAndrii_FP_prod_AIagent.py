@@ -474,15 +474,23 @@ def process_excel(file_path: str, task_description: str, resume_checkpoint: bool
 # 8. ЗАПУСК НА ГОТОВИХ ФАЙЛАХ
 # ==========================================
 if __name__ == "__main__":
-    # Система читає ваші готові файли capitals.xlsx та mountains.xlsx з диска
+    # Система читає готові файли capitals.xlsx та mountains.xlsx з диска
     # і створює нові файли capitals_enriched.xlsx та mountains_enriched.xlsx
     
     process_excel(
         file_path="capitals.xlsx",
         task_description="знайди пряму відстань між столицями в км для колонки distance"
     )
-
+   
+   # process_excel(
+   #         file_path="capitals.xlsx",
+   #         task_description="додай кількість населення для кожної столиці для колонки population і знайди пряму відстань між столицями в км для колонки distance"
+   #     )
     process_excel(
         file_path="mountains.xlsx",
         task_description="додай висоту гір у метрах до колонки height"
     )
+    #process_excel(
+    #        file_path="mountains.xlsx",
+    #        task_description="додай GPS координати кожної вершини та висоту гір у метрах до колонок GPS_coordinates, height"
+    #    )
