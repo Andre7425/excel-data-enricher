@@ -1,0 +1,24 @@
+```text
+# Environment credentials
+.env
+
+# Python compilation files
+__pycache__/
+*.py[cod]
+*$py.class
+.venv3.11/
+.venv/
+venv/
+ENV/
+
+# SQLite Caching database
+*.sqlite
+*.sqlite3
+
+# Excel output files generated during tests
+*_enriched.xlsx
+*.xlsx
+
+# OS generated files
+.DS_Store
+Thumbs.db
